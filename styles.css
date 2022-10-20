@@ -25,7 +25,7 @@ body {
     background-color: white;
     margin: 6vh 5vw;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: 90vw;
+    width: 80vw;
     height: 85vh;
     align-self: center;
     display: flex;
@@ -34,13 +34,13 @@ body {
 }
 
 .content {
-   
+
     max-width: 740px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-around;    
  
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 #subscribe {
-    height: 12%;
+    height: 100px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -66,32 +66,58 @@ body {
 }
 
 #subscribe p {
-    font-size: 18px;
+    flex-basis: 30px;
+    flex-shrink: 0;
+    font-size: 0.9em;
 }
 
 #fill {
+ 
     width: 68%;
-  
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: space-between;
 }
 
-#fill .input {
+#fill input {
     height: 50px;
     width: 70%;
     border-radius: 50px;
     border-style: solid;
-    border-color:rgba(176, 176, 176, 0.4);
+    border-color:rgba(176, 176, 176, 0.3);
 
+}
+
+#fill input:focus {
+    border-color: rgba(77, 123, 243, 0.4);
 }
 
 input[type=text] {
     padding: 12px 20px;
-    font-size: 14px;
-    color: rgba(176, 176, 176, 0.5);
+    font-size: 0.7em;
+    color: rgba(176, 176, 176, 0.4);
+    outline: none;
 }
+
+
+input[type=text]:focus {
+    border-style: solid;
+    color: rgba(0, 0, 0, 1);
+    border-color: rgba(77, 123, 243, 0.4);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#err {
+    margin: 5px 0px 0px 20px;
+    font-size: 0.5em;
+    font-style: italic;
+    color: red;
+    order: 3;
+}
+
+
 
 #fill .button {
     height: 50px;    
@@ -101,10 +127,19 @@ input[type=text] {
     color: white;
     background-color: rgb(77, 123, 243);
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-
+    outline: none;
 }
 
+#fill .button:hover {
+    background-color: rgba(77, 123, 243, 0.8);
+    cursor: pointer;   
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
 #dashboard {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -113,32 +148,121 @@ input[type=text] {
 
 #dashboard img {
     max-width: 70%;
-  
-}
-
-#socials {
-    width: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     
 }
 
-i {
+#bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#socials {
+    
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    
+}
+
+#socials img {
+    border: 1px solid rgba(176, 176, 176, 0.3);
+    padding: 10px;
+  
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+} 
+
+#socials img:hover {
+    cursor: pointer;   
+    background: rgba(77, 123, 243, 1);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
 
 }
 
 #copyright {
-    font-size: 10px;
+
+    font-size: 0.5em;
     padding-bottom: 30px;
+    color: rgba(176, 176, 176, 1);
 }
 
 
 footer {
     display: flex;
-    font-size: 10px;
+    font-size: 0.5em;
 }
 
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 0 0;
+        width: 100vw;
+        height: 100vh;
+     
+    }
+
+    #logo {
+        padding-top: 80px;
+    
+    }
+    
+    
+    #subscribe {
+        font-size: 0.7em;
+        
+    }   
+
+    #subscribe p {
+        font-size: 0.9rem;
+    }
+    #fill {
+    justify-content: flex-start;
+    align-items: flex-start;
+   
+}
+
+    #fill input {
+        height: 50px;
+        width: 100%;
+        border-radius: 50px;
+        border-style: solid;
+        border-color:rgba(176, 176, 176, 0.3);
+    
+    }
+  
+#err {
+    width: 90%;
+    margin: 5px 0px 0px 20px;
+    font-size: 0.6em;
+    font-style: italic;
+    text-align: center;
+    color: red;
+    order: 0;
+}
+
+
+    #fill .button {
+        height: 50px;    
+        width: 100%;
+        border: none;
+        border-radius: 50px;
+        margin-top: 10px;
+        color: white;
+        background-color: rgb(77, 123, 243);
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        outline: none;
+    }
+
+
+
+}
 
 /*
 - Mobile: 375px
