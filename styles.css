@@ -1,0 +1,159 @@
+:root {
+    --paleblue: rgb(168, 193, 255);
+    --lightred: rgb(255, 82, 99);
+    --gray: rgb(150, 150, 150);
+    --darkblue: rgb(21, 31, 41);
+}
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0,0,0,0.05);
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    margin: 6vh 5vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 90vw;
+    height: 85vh;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content {
+    border: 1px solid black;
+    max-width: 740px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+ 
+}
+
+.launching {
+    color: var(--gray);
+     font-weight: 400;
+}
+
+
+#logo {
+    padding-top: 60px;
+    width: 86px;
+    height: 26px;
+}
+
+#subscribe {
+    height: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#subscribe p {
+    font-size: 18px;
+}
+
+#fill {
+    width: 68%;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+}
+
+#fill .input {
+    height: 50px;
+    width: 70%;
+    border-radius: 50px;
+    border-style: solid;
+    border-color:rgba(176, 176, 176, 0.4);
+
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    font-size: 14px;
+    color: rgba(176, 176, 176, 0.5);
+}
+
+#fill .button {
+    height: 50px;    
+    width: 28%;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(77, 123, 243);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+}
+
+#dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#dashboard img {
+    max-width: 70%;
+  
+}
+
+#socials {
+    width: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+i {
+
+}
+
+#copyright {
+    font-size: 10px;
+    padding-bottom: 30px;
+}
+
+
+footer {
+    display: flex;
+    font-size: 10px;
+}
+
+
+/*
+- Mobile: 375px
+- Desktop: 1440px
+
+FONTS
+- Family: [Libre Franklin](https://fonts.google.com/specimen/Libre+Franklin)
+- Weights: 300, 600, 700
+
+ font-family: 'Libre Franklin', sans-serif;
+
+Icons
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
+*/
