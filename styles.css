@@ -34,7 +34,7 @@ body {
 }
 
 .content {
-    border: 1px solid black;
+   
     max-width: 740px;
     display: flex;
     flex-wrap: wrap;
