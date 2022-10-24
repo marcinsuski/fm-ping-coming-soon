@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"name": "fm-ping-coming-soon",
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../../Ważne/IT/projects/ping-coming-soon-page-master/images"
+		},
+		{
+			"name": "design",
+			"path": "../../Ważne/IT/projects/ping-coming-soon-page-master/design"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "fm-ping-coming-soon",
+		"liveServer.settings.port": 5501
+	}
+}

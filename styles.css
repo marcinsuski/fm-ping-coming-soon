@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: rgba(0,0,0,0.05);
+    background-color: white;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 20px;
     display: flex;
@@ -24,7 +24,7 @@ body {
 .container {
     background-color: white;
     margin: 6vh 5vw;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
     width: 80vw;
     height: 85vh;
     align-self: center;
@@ -34,7 +34,6 @@ body {
 }
 
 .content {
-
     max-width: 740px;
     display: flex;
     flex-wrap: wrap;
@@ -44,17 +43,45 @@ body {
  
 }
 
+.upper {
+    display: flex;
+    min-width: 70%;
+    max-width: 100%;
+    min-height: 35vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;  
+     
+}
+
+.lower {
+    display: flex;
+    max-width: 70vw;
+    min-height: 50vh;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+  
+     
+}
+
+#logo img {
+    margin-top: 50px;
+    width: 76px;
+    max-height: 26px;
+    
+}
+
 .launching {
+    font-size: clam(0.5em, 1em);
     color: var(--gray);
      font-weight: 400;
 }
 
 
-#logo {
-    padding-top: 60px;
-    width: 86px;
-    height: 26px;
-}
+
 
 #subscribe {
     height: 100px;
@@ -72,8 +99,8 @@ body {
 }
 
 #fill {
- 
-    width: 68%;
+    margin-bottom: 50px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -81,8 +108,10 @@ body {
 }
 
 #fill input {
-    height: 50px;
-    width: 70%;
+    height: 45px;
+    margin-right: 10px;
+    min-width: 65%;
+    max-width: 68%;
     border-radius: 50px;
     border-style: solid;
     border-color:rgba(176, 176, 176, 0.3);
@@ -104,7 +133,7 @@ input[type=text] {
 input[type=text]:focus {
     border-style: solid;
     color: rgba(0, 0, 0, 1);
-    border-color: rgba(77, 123, 243, 0.4);
+    border-color: rgba(243, 77, 77, 0.4);
     -webkit-transition: 0.5s;
     transition: 0.5s;
 }
@@ -120,8 +149,9 @@ input[type=text]:focus {
 
 
 #fill .button {
-    height: 50px;    
-    width: 28%;
+
+    height: 45px;    
+    width: 30%;
     border: none;
     border-radius: 50px;
     color: white;
@@ -139,7 +169,7 @@ input[type=text]:focus {
 
 
 #dashboard {
-
+ 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -200,7 +230,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 730px) {
     .container {
         margin: 0 0;
         width: 100vw;
@@ -208,11 +238,44 @@ footer {
      
     }
 
+    
+    .upper {
+       
+        display: flex;
+        width: 70vw;
+        min-height: 40vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;   
+    
+        
+    }
+
+    
+    .lower {
+  
+        display: flex;
+        max-width: 70%;
+        min-height: 55vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;  
+    
+        
+    }
+
     #logo {
-        padding-top: 80px;
+        padding-top: 60px;
     
     }
     
+    #logo img {
+        width: 66px;
+        max-height: 26px;
+        
+    }
     
     #subscribe {
         font-size: 0.7em;
@@ -222,7 +285,9 @@ footer {
     #subscribe p {
         font-size: 0.9rem;
     }
+
     #fill {
+    width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
    
@@ -230,22 +295,22 @@ footer {
 
     #fill input {
         height: 50px;
-        width: 100%;
+        min-width: 100%;
         border-radius: 50px;
         border-style: solid;
         border-color:rgba(176, 176, 176, 0.3);
     
     }
   
-#err {
-    width: 90%;
-    margin: 5px 0px 0px 20px;
-    font-size: 0.6em;
-    font-style: italic;
-    text-align: center;
-    color: red;
-    order: 0;
-}
+    #err {
+        width: 90%;
+        margin: 5px 0px 0px 20px;
+        font-size: 0.6em;
+        font-style: italic;
+        text-align: center;
+        color: red;
+        order: 0;
+    }
 
 
     #fill .button {
@@ -260,9 +325,39 @@ footer {
         outline: none;
     }
 
+    #dashboard img {
+        max-width: 100%;
+        
+    }
 
 
 }
+
+
+@media only screen and (min-width: 1440px) {
+
+.container {
+    background-color: white;
+    margin: 6vh 5vw;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 80vw;
+    height: 85vh;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content {
+    max-width: 740px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+ 
+}
+
 
 /*
 - Mobile: 375px
